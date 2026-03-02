@@ -83,14 +83,52 @@ function renderHeroCarousel() {
   const slides = [...carousel.querySelectorAll(".hero-slide")];
   const dots = [...carousel.querySelectorAll(".hero-dot")];
   let activeIndex = 0;
+  let intervalId = null;
+  let resumeTimeoutId = null;
 
-  window.setInterval(() => {
+  const advanceSlide = () => {
     slides[activeIndex].classList.remove("is-active");
     dots[activeIndex].classList.remove("is-active");
     activeIndex = (activeIndex + 1) % slides.length;
     slides[activeIndex].classList.add("is-active");
     dots[activeIndex].classList.add("is-active");
-  }, 3200);
+  };
+
+  const startRotation = () => {
+    if (intervalId !== null || slides.length <= 1) return;
+    intervalId = window.setInterval(advanceSlide, 3200);
+  };
+
+  const stopRotation = () => {
+    if (intervalId === null) return;
+    window.clearInterval(intervalId);
+    intervalId = null;
+  };
+
+  const clearResumeTimeout = () => {
+    if (resumeTimeoutId === null) return;
+    window.clearTimeout(resumeTimeoutId);
+    resumeTimeoutId = null;
+  };
+
+  carousel.addEventListener("mouseenter", () => {
+    clearResumeTimeout();
+    stopRotation();
+  });
+
+  carousel.addEventListener("mouseleave", () => {
+    if (slides.length <= 1) return;
+
+    clearResumeTimeout();
+    stopRotation();
+    resumeTimeoutId = window.setTimeout(() => {
+      resumeTimeoutId = null;
+      advanceSlide();
+      startRotation();
+    }, 1000);
+  });
+
+  startRotation();
 }
 
 function initExperienceSection() {
