@@ -34,7 +34,6 @@ function renderProfile() {
     ctaRoot.innerHTML = buildActionButtons(
       [
         { label: "Resume", href: profile.links.resume, primary: true },
-        { label: "GitHub", href: profile.links.github },
         { label: "LinkedIn", href: profile.links.linkedin },
         { label: "Email", href: profile.links.email }
       ],
@@ -45,8 +44,7 @@ function renderProfile() {
   if (contactRoot) {
     contactRoot.innerHTML = buildActionButtons([
       { label: "Email", href: profile.links.email, primary: true },
-      { label: "LinkedIn", href: profile.links.linkedin },
-      { label: "GitHub", href: profile.links.github }
+      { label: "LinkedIn", href: profile.links.linkedin }
     ]);
   }
 }

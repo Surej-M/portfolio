@@ -107,6 +107,7 @@ export const projects = [
     title: "Fatigue Shaft Design Tool (MATLAB)",
     description: "Built a MATLAB program to size circular steel shafts under combined alternating bending and torsion using DE-Goodman + Von Mises.",
     tags: ["MATLAB", "Fatigue Design", "Machine Design"],
+    image: "assets/img/pipecode.png",
     links: {
       github: "#",
       demo: "#"
@@ -118,6 +119,7 @@ export const projects = [
     title: "Coastal Livability Data Analysis Tool (MATLAB)",
     description: "Processed CDIP NetCDF buoy data from 2022 to 2023 to score coastal livability across four California locations and visualize seasonal trends.",
     tags: ["MATLAB", "NetCDF", "Data Analysis"],
+    image: "assets/img/boatpic.png",
     links: {
       github: "#",
       demo: "#"
@@ -129,8 +131,8 @@ export const projects = [
     title: "Engineering Graphics & Design Team Robot",
     description: "Designed and built a competition robot in a team of 4 using AutoCAD, Fusion 360, 3D printing, laser cutting, and machine shop fabrication.",
     tags: ["AutoCAD", "Fusion 360", "Fabrication", "Team Design"],
+    image: "assets/img/mae3pic.webp",
     links: {
-      github: "#",
       demo: "#"
     },
     featured: false

@@ -759,6 +759,13 @@ p {
   padding: 2rem;
 }
 
+#contact-links .button {
+  min-height: 3.5rem;
+  min-width: 9.5rem;
+  padding: 0.95rem 1.5rem;
+  font-size: 1.05rem;
+}
+
 .projects-page-intro {
   padding-top: 4.5rem;
   padding-bottom: 1rem;
