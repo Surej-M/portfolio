@@ -110,7 +110,7 @@ export const projects = [
     tags: ["MATLAB", "Fatigue Design", "Machine Design"],
     image: "assets/img/pipecode.png",
     links: {
-      github: "#",
+      github: "https://github.com/Surej-M/portfolio/blob/main/assets/code/Mae190_project.m",
       demo: "#"
     },
     featured: true
