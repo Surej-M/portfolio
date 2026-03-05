@@ -122,7 +122,7 @@ export const projects = [
     tags: ["MATLAB", "NetCDF", "Data Analysis"],
     image: "assets/img/boatpic.png",
     links: {
-      github: "#",
+      github: "https://github.com/Surej-M/portfolio/tree/main/assets/code/SIOProject",
       demo: "#"
     },
     featured: true
