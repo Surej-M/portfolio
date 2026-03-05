@@ -98,6 +98,7 @@ export const projects = [
     tags: ["Robotics", "Onshape", "Machining", "System Design"],
     image: "assets/img/capstoneCAD.jpg",
     links: {
+      cad: "https://cad.onshape.com/documents/93da406f08e09880af6e2567/w/6a7a15e992db229983a5709d/e/a945f402bfa8960ae5b8957e",
       website: "https://sites.google.com/eng.ucsd.edu/mae156b-2025spring-team42"
     },
     featured: true

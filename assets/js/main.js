@@ -317,6 +317,10 @@ function buildProjectCard(project, wide) {
     actions.push(buildSingleAction(project.links.website, "Project Website"));
   }
 
+  if (project.links.cad) {
+    actions.push(buildSingleAction(project.links.cad, "CAD"));
+  }
+
   return `
     <article class="${wide ? "project-card-wide" : "project-card"}">
       ${figure}
