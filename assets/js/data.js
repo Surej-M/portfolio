@@ -1,5 +1,5 @@
 export const profile = {
-  location: "Los Angeles / San Diego",
+  location: "Southern California",
   status: "Seeking Mechanical Engineering roles",
   summary: [
     "I am a MS Mechanical Engineering student passionate about hands-on problem-solving and experimental design.",
@@ -7,7 +7,7 @@ export const profile = {
     "Hobbies: Indoor Rock Climbing, Hiking, Reading books"
   ],
   links: {
-    resume: "assets/img/Surejkrishna_Resume.pdf",
+    resume: "assets/img/Summer_Surejkrishna_Resume.pdf",
     github: "#",
     linkedin: "https://www.linkedin.com/in/surejkrishna-melattinkara-sunil/",
     email: "mailto:smelattin0002@gmail.com"
@@ -91,6 +91,15 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: "ansys-fluent-cfd-ventilation-analysis",
+    title: "ANSYS Fluent CFD Ventilation Analysis",
+    description: "Developed a 3D ANSYS Fluent CFD model of classroom ventilation, performing mesh refinement, velocity-field analysis, and particle tracking to evaluate airflow patterns and aerosol transport associated with COVID-19 exposure risk",
+    tags: ["ANSYS Fluent", "CFD", "Ventilation Analysis"],
+    image: "assets/img/CODEXMAE185.png",
+    links: {},
+    featured: false
+  },
   {
     id: "robotic-cage-handling-system",
     title: "Robotic Cage Handling System (Senior Capstone)",
