@@ -1,6 +1,6 @@
 export const profile = {
   location: "Southern California",
-  status: "Seeking Mechanical Engineering roles",
+  status: "#OPENTOWORK",
   summary: [
     "I am a MS Mechanical Engineering graduate passionate about hands-on problem-solving and experimental design.",
     "I thrive in fast-paced, collaborative environments and enjoy bringing innovative ideas to life.",
