@@ -7,6 +7,7 @@ export const profile = {
     "Hobbies: Indoor Rock Climbing, Hiking, Reading books"
   ],
   links: {
+    resume: "assets/img/Summer_Surejkrishna_Resume.pdf",
     github: "#",
     linkedin: "https://www.linkedin.com/in/surejkrishna-melattinkara-sunil/",
     email: "mailto:smelattin0002@gmail.com"
