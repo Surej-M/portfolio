@@ -33,8 +33,7 @@ function renderProfile() {
   if (ctaRoot) {
     ctaRoot.innerHTML = buildActionButtons(
       [
-        { label: "Resume", href: profile.links.resume, primary: true },
-        { label: "LinkedIn", href: profile.links.linkedin },
+        { label: "LinkedIn", href: profile.links.linkedin, primary: true },
         { label: "Email", href: profile.links.email }
       ],
       true
