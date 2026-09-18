@@ -356,7 +356,7 @@ function buildSingleAction(href, label) {
   const disabled = !href || href === "#";
   return `
     <a
-      class="button button-secondary ${disabled ? "is-disabled" : ""}"
+      class="button button-primary ${disabled ? "is-disabled" : ""}"
       href="${href}"
       ${disabled ? 'tabindex="-1" aria-disabled="true"' : 'target="_blank" rel="noreferrer"'}
     >
